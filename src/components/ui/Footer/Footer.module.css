@@ -27,12 +27,12 @@
   font-size: 18px;
   max-width: 350px;
   text-align: justify;
-  padding-inline: 4px;
 }
 
 .footerColumn ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footerColumn ul li {
@@ -55,49 +55,76 @@
   margin-top: 8px;
 }
 
+/* Contact links */
+.contactLink {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactLink:hover {
+  color: var(--color-primary);
+}
+
+/* Social */
+.social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social a {
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.social a:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
 .footer hr {
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   margin: 28px 0 18px;
 }
 
+/* Brand */
 .copyright {
-  font-size: 18px;
-  color: var(--color-text-main);
+  display: flex;
+  justify-content: center;
 }
 
-/* ================= Responsive ================= */
-@media (max-width: 992px) {
-  .footer {
-    padding: 45px 28px 22px;
-  }
-
-  .footerColumn {
-    width: 45%;
-  }
+.brandInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
 
-@media (max-width: 480px) {
-  .footer {
-    padding: 38px 20px 22px;
-  }
-
-  .footerColumn {
-    width: 100%;
-  }
-
-  .footerColumn p {
-    max-width: 100%;
-    text-align: right;
-  }
-
-  .footerLogo img {
-    margin: 0 auto;
-    display: block;
-  }
+.brandInline:hover {
+  opacity: 1;
 }
 
-/* ================= Scroll To Top ================= */
+.brandInline img {
+  max-width: 180px;
+  width: 100%;
+}
+
+/* Scroll To Top */
 .scrollTopBtn {
   position: fixed;
   bottom: 24px;
@@ -128,4 +155,37 @@
 .scrollTopBtn:hover {
   background: var(--color-primary-mid);
   transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer {
+    padding: 45px 28px 22px;
+  }
+
+  .footerColumn {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 38px 20px 22px;
+  }
+
+  .footerColumn {
+    width: 100%;
+    text-align: right;
+  }
+
+  .footerLogo img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .brandInline {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
 }
