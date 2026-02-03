@@ -1,15 +1,14 @@
 import styles from "./About.module.css";
 
 import img1 from "../../../assets/images/Rectangle.png";
-import img2 from "../../../assets/images/Rectangle.png";
-import img3 from "../../../assets/images/Rectangle.png";
+// import img2 from "../../../assets/images/Rectangle.png";
+// import img3 from "../../../assets/images/Rectangle.png";
 
 export default function About() {
   return (
     <section className={styles.aboutSection} id="about">
       <div className="container">
         <div className="row align-items-center">
-
           {/* النص */}
           <div className="col-lg-6 col-md-6 col-12 text-end">
             <h1 className={styles.aboutTitle}>من نحن</h1>
@@ -18,10 +17,10 @@ export default function About() {
               تطبيق أ ل ف – لاَم – م ي م هو منصة تعليمية مبتكرة تهدف إلى تسهيل
               تعلّم القرآن الكريم وإتقان التلاوة والتجويد عبر تجربة حديثة
               وتفاعلية. يجمع التطبيق بين الأساليب التعليمية المتدرجة، الدروس
-              الصوتية والمرئية، الجلسات المباشرة مع معلّمين معتمدين، ونظام مستويات
-              يساعدك على متابعة تقدّمك خطوة بخطوة. نسعى لتقديم بيئة تعليمية تجمع
-              بين الأصالة والسهولة، لتكون رحلتك مع القرآن أقرب وأسهل في أي وقت ومن
-              أي مكان.
+              الصوتية والمرئية، الجلسات المباشرة مع معلّمين معتمدين، ونظام
+              مستويات يساعدك على متابعة تقدّمك خطوة بخطوة. نسعى لتقديم بيئة
+              تعليمية تجمع بين الأصالة والسهولة، لتكون رحلتك مع القرآن أقرب
+              وأسهل في أي وقت ومن أي مكان.
             </p>
 
             {/* Feature 1 */}
@@ -31,7 +30,8 @@ export default function About() {
                 <h3>إرشادات تجويدية دقيقة</h3>
                 <p>
                   شرح مبسّط وواضح لقواعد التجويد مع أمثلة عملية تساعدك على تحسين
-                  النطق، ضبط المخارج، وإتقان التلاوة خطوة بخطوة بأسلوب سهل وواضح.
+                  النطق، ضبط المخارج، وإتقان التلاوة خطوة بخطوة بأسلوب سهل
+                  وواضح.
                 </p>
               </div>
             </div>
@@ -43,8 +43,8 @@ export default function About() {
                 <h3>متابعة تقدّمك التعليمي</h3>
                 <p>
                   نظام تعليمي ذكي يتيح لك متابعة مستوى التلاوة والتجويد، نتائج
-                  الاختبارات، مواعيد الجلسات، وكل خطوة من خطوات تقدمك داخل التطبيق
-                  بسهولة ووضوح.
+                  الاختبارات، مواعيد الجلسات، وكل خطوة من خطوات تقدمك داخل
+                  التطبيق بسهولة ووضوح.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function About() {
                   aria-current="true"
                   aria-label="الشريحة الأولى"
                 />
-                <button
+                {/* <button
                   type="button"
                   data-bs-target="#aboutCarousel"
                   data-bs-slide-to="1"
@@ -77,7 +77,7 @@ export default function About() {
                   data-bs-target="#aboutCarousel"
                   data-bs-slide-to="2"
                   aria-label="الشريحة الثالثة"
-                />
+                /> */}
               </div>
 
               <div className="carousel-inner">
@@ -89,7 +89,7 @@ export default function About() {
                     loading="lazy"
                   />
                 </div>
-                <div className="carousel-item">
+                {/* <div className="carousel-item">
                   <img
                     src={img2}
                     className={`d-block w-100 ${styles.aboutImg}`}
@@ -104,10 +104,10 @@ export default function About() {
                     alt="صورة 3"
                     loading="lazy"
                   />
-                </div>
+                </div> */}
               </div>
 
-              <button
+              {/* <button
                 className="carousel-control-prev"
                 type="button"
                 data-bs-target="#aboutCarousel"
@@ -131,10 +131,9 @@ export default function About() {
                   className="carousel-control-next-icon"
                   aria-hidden="true"
                 />
-              </button>
+              </button> */}
             </div>
           </div>
-
         </div>
       </div>
     </section>
